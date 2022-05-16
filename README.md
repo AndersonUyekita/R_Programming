@@ -6,7 +6,7 @@
 * Course: R Programming
     * Instructor: Roger D. Peng
     * URL: https://www.coursera.org/learn/r-programming
-    * [Rpub URL](https://rpubs.com/AndersonUyekita/r_programming_air_pollution){target="_blank"}
+    * Rpub URL: [Programming Assignment 1: Air Pollution](https://rpubs.com/AndersonUyekita/r_programming_air_pollution)
 
 ***
 

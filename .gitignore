@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # remove html
 *.html
+
+# Remove Folder of RPub
+rsconnect
