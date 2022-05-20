@@ -20,16 +20,18 @@ This Programming Assignment is part of the R Programming course and
 consists of four parts. The dataset analyzed is about the death due to a
 specific outcome, such as heart attack, heart failure, or pneumonia.
 
-Part 1: Most hospitals in the US have 14 to 17 deaths occasioned by
-heart attacks monthly. Part 2: The
-[`best()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/Week%204/R/best.R)
-function aims to find the best hospital in any outcomes (heart attack,
-heart failure or pneumonia) in the last 30 days. Part 3: The
-[`rankhospital()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/Week%204/R/rankhospital.R)
-returns the hospital name of a given state and a given ranking. Part 4:
-The
-[`rankall()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/Week%204/R/rankall.R)
-compares several states based on a given ranking.
+-   Part 1: Most hospitals in the US have 14 to 17 deaths occasioned by
+    heart attacks monthly.
+-   Part 2: The
+    [`best()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/Week%204/R/best.R)
+    function aims to find the best hospital in any outcomes (heart
+    attack, heart failure or pneumonia) in the last 30 days.
+-   Part 3: The
+    [`rankhospital()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/Week%204/R/rankhospital.R)
+    returns the hospital name of a given state and a given ranking.
+-   Part 4: The
+    [`rankall()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/Week%204/R/rankall.R)
+    compares several states based on a given ranking.
 
 ------------------------------------------------------------------------
 
@@ -114,7 +116,7 @@ first few rows.
 ``` r
 # Print the first rows of "outcome-of-care-measures.csv" file.
 # I have used DT package to turn it readable.
-data_outcome %>% dplyr::as_data_frame() %>% head()
+data_outcome %>% dplyr::as_tibble() %>% head()
 ```
 
     ## # A tibble: 6 x 46
