@@ -1,13 +1,3 @@
----
-title: TEST
-subtitle: Test 2
-author: Anderson H Uyekita
-date: 20/05/2022
-output:
-  html_document:
-    toc: true
-    theme: readable
----
 # [R Programming] Programming Assignment 1: Air Pollution
 
 #### Tags
@@ -25,9 +15,9 @@ output:
 
 This Programming Assignment is part of the R Programming course and consists of three parts, each one with one function development:
 
-* Part 1: The `pollutantmean()` function calculates the mean of a specific pollutant (could be sulfate or nitrate), excluding any `NA` observation.
-* Part 2: The `complete()` function analyses the number of non-NA observations of each monitor id.
-* Part 3: The `corr()` function calculates the correlation between nitrate and sulfate, excluding rows with `NA` observations.
+* Part 1: The [`pollutantmean()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/R/pollutantmean.R){target="_blank" rel="noopener noreferrer"} function calculates the mean of a specific pollutant (could be sulfate or nitrate), excluding any `NA` observation.
+* Part 2: The [`complete()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/R/complete.R){target="_blank" rel="noopener noreferrer"} function analyses the number of non-NA observations of each monitor id.
+* Part 3: The [`corr()`](https://github.com/AndersonUyekita/r_programming-programming_assignment_1/blob/main/R/corr.R){target="_blank" rel="noopener noreferrer"} function calculates the correlation between nitrate and sulfate, excluding rows with `NA` observations.
 
 ***
 
