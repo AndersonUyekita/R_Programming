@@ -95,7 +95,15 @@ data_outcome[, 11] <- as.numeric(data_outcome[, 11])
 
 ## You may get a warning about NAs being introduced; that is okay
 # Create a histogram
-hist(data_outcome[, 11])
+p <- ggplot2::ggplot(data_outcome,
+                aes(x = data_outcome[, 11])) +
+    geom_histogram(show.legend = FALSE) + 
+    ggtitle("Heart Attack Histogram") +
+    xlab("Heart Attack Mortality in 30-days") +
+    ylab("Frequency \n Quantity of hospital")
+
+# Converting into Plotly Graphic
+plotly::ggplotly(p)
 ```
 
 Because we originally read the data in as character (by specifying colClasses = "character" we need to coerce the column to be numeric. You may get a warning about NAs being introduced but that is okay.

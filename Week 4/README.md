@@ -151,7 +151,12 @@ data_outcome[, 11] <- as.numeric(data_outcome[, 11])
 
 ## You may get a warning about NAs being introduced; that is okay
 # Create a histogram
-hist(data_outcome[, 11])
+ggplot2::ggplot(data_outcome,
+                aes(x = data_outcome[, 11])) +
+    geom_histogram(show.legend = FALSE) + 
+    ggtitle("Heart Attack Histogram") +
+    xlab("Heart Attack Mortality in 30-days") +
+    ylab("Frequency \n Quantity of hospital")
 ```
 
 ![](README_files/figure-gfm/histogram-1.png)<!-- -->
