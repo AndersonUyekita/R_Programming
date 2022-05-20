@@ -1,3 +1,29 @@
+################################################################################
+#                                                                              #
+#   Specialization: Data Science - Foundations using R Specialization          #
+#           Course: R Programming                                              #
+#                                                                              #
+#           Author: Anderson Hitoshi Uyekita                                   #
+#             Date: 2022/05/13                                                 #
+#                                                                              #
+#          Project: Programming Assignment 1 - Air Pollution (Week 2)          #
+#      Deliverable: rankhospital.R                                             #
+#                                                                              #
+################################################################################
+
+#' rankhospital Function
+#' 
+#' This function will create a ranking of all hospitals within a given
+#' state/territory/district. As a result, it will return the hospital name in a
+#' given num ranking in that state.
+#' 
+#' @param state It is two letters representing one of the US's states, districts, or territories.
+#' 
+#' @param outcome It could be a heart attack, heart failure, or pneumonia.
+#' 
+#' @param num It is the rank position of a given outcome (heart attack, heart failure, or pneumonia) based on the state in which this hospital is located.
+#' 
+#' Function to solve Part 3 of this programming assignment 1.
 rankhospital <- function(state, outcome, num = "best") {
     
     ## Read outcome data

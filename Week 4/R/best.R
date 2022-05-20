@@ -1,3 +1,26 @@
+################################################################################
+#                                                                              #
+#   Specialization: Data Science - Foundations using R Specialization          #
+#           Course: R Programming                                              #
+#                                                                              #
+#           Author: Anderson Hitoshi Uyekita                                   #
+#             Date: 2022/05/13                                                 #
+#                                                                              #
+#          Project: Programming Assignment 1 - Air Pollution (Week 2)          #
+#      Deliverable: best.R                                                     #
+#                                                                              #
+################################################################################
+
+#' best Function
+#' 
+#' This function will find the best hospital in the last 30-day concerning a
+#' specific outcome (heart attack, heart failure, or pneumonia)
+#' 
+#' @param state It is two letters representing one of the US's states, districts, or territories.
+#' 
+#' @param outcome It could be a heart attack, heart failure, or pneumonia.
+#' 
+#' Function to solve Part 2 of this programming assignment 1.
 best <- function(state, outcome) {
     
     ## Read outcome data
@@ -30,14 +53,27 @@ best <- function(state, outcome) {
         data_tidy$heart_failure <- as.numeric(data_tidy$heart_failure)
         data_tidy$pneumonia <- as.numeric(data_tidy$pneumonia)
         
+        # Subsetting the Tidy Dataset to provide the output
         data_tidy %>%
-            select(hospital_name,hospital_state,all_of(outcome_)) %>%
-            filter(hospital_state == state) %>%
-            na.omit() %>% select(-hospital_state) %>%
-            arrange(across(all_of(outcome_)), hospital_name) %>%
-            head(1) %>%
-            select(hospital_name) %>%
-            as.character() -> message
+            
+            select(hospital_name,               #
+                   hospital_state,              # Select only three variables to show in the output.
+                   all_of(outcome_)) %>%        #
+            
+            filter(hospital_state == state) %>% # Filtering the dataset according to the state input.
+            
+            na.omit() %>%                       # Remove all rows with NA observations.
+            
+            select(-hospital_state) %>%         # Based on the examples, the output do not need to show state column
+            
+            arrange(across(all_of(outcome_)),   # I have arranged the dataset first by the outcome and then by hospital name.
+                    hospital_name) %>%          # The result is a dataset with the best hospital in the first row.
+            
+            head(1) %>%                         # Selecting only the first rows (the best hospital in that outcome)
+            
+            select(hospital_name) %>%           # Selecting only the column.
+            
+            as.character() -> message           # Converting into a string to be equal to the example.
     }
     
     # Something is wrong with the inputs

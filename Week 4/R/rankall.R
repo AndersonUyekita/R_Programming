@@ -1,3 +1,27 @@
+################################################################################
+#                                                                              #
+#   Specialization: Data Science - Foundations using R Specialization          #
+#           Course: R Programming                                              #
+#                                                                              #
+#           Author: Anderson Hitoshi Uyekita                                   #
+#             Date: 2022/05/13                                                 #
+#                                                                              #
+#          Project: Programming Assignment 1 - Air Pollution (Week 2)          #
+#      Deliverable: rankall.R                                                  #
+#                                                                              #
+################################################################################
+
+#' rankall Function
+#' 
+#' This function will create a ranking of all hospitals within your
+#' state/territory/district and, as a result, will return the hospital name of
+#' each state that is ranked in that given num.
+#' 
+#' @param outcome It could be a heart attack, heart failure, or pneumonia.
+#' 
+#' @param num It is the rank position of a given outcome (heart attack, heart failure, or pneumonia) based on the state in which this hospital is located.
+#' 
+#' Function to solve Part 4 of this programming assignment 1.
 rankall <- function(outcome, num = "best") {
     
     ## Read outcome data
