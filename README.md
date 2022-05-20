@@ -1,12 +1,33 @@
+---
+title: TEST
+subtitle: Test 2
+author: Anderson H Uyekita
+date: 20/05/2022
+output:
+  html_document:
+    toc: true
+    theme: readable
+---
 # [R Programming] Programming Assignment 1: Air Pollution
 
 #### Tags
 
-* Date: 13/05/2022
+* Specialization: Data Science: Foundations using R Specialization
 * Course: R Programming
     * Instructor: Roger D. Peng
     * URL: https://www.coursera.org/learn/r-programming
-    * Rpub URL: [Programming Assignment 1: Air Pollution](https://rpubs.com/AndersonUyekita/r_programming_air_pollution)
+    * Rpubs URL: [Programming Assignment 1: Air Pollution](https://rpubs.com/AndersonUyekita/r_programming_air_pollution)
+* Date: 13/05/2022
+
+***
+
+## Sinopsis
+
+This Programming Assignment is part of the R Programming course and consists of three parts, each one with one function development:
+
+* Part 1: The `pollutantmean()` function calculates the mean of a specific pollutant (could be sulfate or nitrate), excluding any `NA` observation.
+* Part 2: The `complete()` function analyses the number of non-NA observations of each monitor id.
+* Part 3: The `corr()` function calculates the correlation between nitrate and sulfate, excluding rows with `NA` observations.
 
 ***
 
