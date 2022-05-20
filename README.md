@@ -32,7 +32,7 @@ The zip file contains 332 comma-separated-value (CSV) files containing pollution
 
 For this programming assignment you will need to unzip this file and create the directory 'specdata'. Once you have unzipped the zip file, do not make any modifications to the files in the 'specdata' directory. In each file you'll notice that there are many days where either sulfate or nitrate (or both) are missing (coded as NA). This is common with air pollution monitoring data in the United States.
 
-```{r}
+```r
 # Download the specdata.zip
 download.file(url = "https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip",
               destfile = "./R Programming/specdata.zip")
@@ -47,7 +47,7 @@ Write a function named 'pollutantmean' that calculates the mean of a pollutant (
 
 You can see some example output from this function below. The function that you write should be able to match this output.
 
-```{r}
+```
 # Expected values from the pollutantmean() function:
 
 pollutantmean("specdata", "sulfate", 1:10)
@@ -64,7 +64,7 @@ Please save your code to a file named pollutantmean.R.
 
 #### Solution
 
-```{r}
+```r
 # Function to solve the Part 1.
 # This function calculate sulfate/nitrate from monitor files.
 pollutantmean <- function(directory, pollutant, id = 1:332) {
@@ -147,7 +147,7 @@ Write a function that reads a directory full of files and reports the number of 
 
 You can see some example output from this function below. The function that you write should be able to match this output. Please save your code to a file named complete.R.
 
-```{r}
+```
 # Expected values from the complete() function:
 
 complete("specdata", 1)
@@ -179,7 +179,7 @@ To run the submit script for this part, make sure your working directory has the
 
 #### Solution
 
-```{r}
+```r
 # Function to solve the Part 2.
 # This function calculate the number of validy observation from each monitor file.
 complete <- function(directory, id) {
@@ -278,7 +278,7 @@ complete <- function(directory, id) {
 
 Write a function that takes a directory of data files and a threshold for complete cases and calculates the correlation between sulfate and nitrate for monitor locations where the number of completely observed cases (on all variables) is greater than the threshold. The function should return a vector of correlations for the monitors that meet the threshold requirement. If no monitors meet the threshold requirement, then the function should return a numeric vector of length 0. A prototype of this function follows
 
-```{r}
+```
 # Expected results from corr function:
 cr <- corr("specdata", 150)
 head(cr)
@@ -313,7 +313,7 @@ length(cr)
 
 #### Solution
 
-```{r}
+```r
 # This function calculate the correlation between nitrate and sulfate from validy observations.
 corr <- function(directory, threshold = 0) {
     

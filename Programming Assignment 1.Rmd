@@ -1,6 +1,6 @@
 ---
 title: '[Programming Assignment 1] R Programming'
-Author: Anderson H. Uyekita
+author: "Anderson H. Uyekita"
 output: html_document
 date: '2022-05-13'
 ---
