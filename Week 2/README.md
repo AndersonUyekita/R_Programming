@@ -1,9 +1,10 @@
-# [R Programming] Programming Assignment 1: Air Pollution
+# [Week 2][R Programming] Programming Assignment 1: Air Pollution
 
 #### Tags
 
 * Specialization: Data Science: Foundations using R Specialization
 * Course: R Programming
+    * Chapter: Week 2
     * Instructor: Roger D. Peng
     * URL: https://www.coursera.org/learn/r-programming
     * Rpubs URL: [Programming Assignment 1: Air Pollution](https://rpubs.com/AndersonUyekita/r_programming_air_pollution)

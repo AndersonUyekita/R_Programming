@@ -1,3 +1,24 @@
+# [Week 3][R Programming] Programming Assignment 2: Lexical Scoping
+
+#### Tags
+
+* Specialization: Data Science: Foundations using R Specialization
+* Course: R Programming
+    * Chapter: Week 3
+    * Instructor: Roger D. Peng
+    * URL: https://www.coursera.org/learn/r-programming
+* Date: 17/05/2022
+
+***
+
+## Sinopsis
+
+
+
+
+
+***
+
 ### Introduction
 
 This second programming assignment will require you to write an R
