@@ -86,7 +86,7 @@ Read the outcome data into R via the read.csv function and look at the first few
 ```{r head_data_outcome}
 # Print the first rows of "outcome-of-care-measures.csv" file.
 # I have used DT package to turn it readable.
-DT::datatable(head(data_outcome))
+data_outcome %>% dplyr::as_data_frame() %>% head()
 ```
 
 There are many columns in this dataset. You can see how many by typing ncol(outcome) (you can see the number of rows with the nrow function). In addition, you can see the names of each column by typing names(outcome) (the names are also in the PDF document.
