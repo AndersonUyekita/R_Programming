@@ -13,9 +13,13 @@
 
 ## Sinopsis
 
+This assignment is quite simple to solve but complex to pretty understand. The use of `closures` makes it hard to comprehend. The key concept is to store the inverse matrix in memory to use later, saving processing time.
 
+It is a must-read the [Closures](http://adv-r.had.co.nz/Functional-programming.html#closures) subitem of Hadley Advanced R book to have a clear view of how those functions (`makeCacheMatrix()` and `cacheSolve()`) work together.
 
+Reference:
 
+* [Advanced R - Closure](http://adv-r.had.co.nz/Functional-programming.html#closures)
 
 ***
 
